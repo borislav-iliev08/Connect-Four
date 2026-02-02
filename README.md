@@ -1,26 +1,40 @@
 # Connect-Four
 # License & Usage Notice
--This repository is provided for viewing purposes only. All rights are reserved by the author. No license is granted to use, copy, modify, merge, publish, distribute, sublicense, or sell any part of this code.You may read the source code, but you are not permitted to use it in any project, commercial or non-commercial, without explicit written permission from the author.Unauthorized use of this code is prohibited.
+#This repository is provided for viewing purposes only. All rights are reserved by the author. No license is granted to use, copy, modify, merge, publish, distribute, sublicense, or sell any part of this code.You may read the source code, but you are not permitted to use it in any project, commercial or non-commercial, without explicit written permission from the author.Unauthorized use of this code is prohibited.
 
-#Here is the code!
+
 
 
 
 --------------------------------------------------
+Here is the code!
 ---------------------------------------------------
+#
+#
+
+
+
+
+
+
+
+
+
+
 import tkinter as tk
 from tkinter import messagebox
 def create_matrix(rows,cols):
     return [[0 for _ in range(cols)]for _ in range(rows)]
+    
 def update_ui(labels,row,col,player_num):
     color='red'if player_num==1 else 'blue'
     labels[row][col].config(bg=color)
+    
 def reset_game(ma,labels):
     for r in range(len(ma)):
         for c in range(len(ma[0])):
             ma[r][c]=0
             labels[r][c].config(bg='white')
-
 
 def handle_colulm_click(ma,labels,column_num,p_num,counter,rows,cols,slots):
     try:
