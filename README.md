@@ -46,6 +46,7 @@ def handle_colulm_click(ma, labels, column_num, p_num, counter, rows, cols, slot
 
         if counter == rows * cols:
             messagebox.showinfo('Game over!', 'The game is draw!')
+            reset_game(ma, labels)
             return 1, 0
 
         return (2 if p_num == 1 else 1), counter
