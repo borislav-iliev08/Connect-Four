@@ -1,9 +1,13 @@
 # Connect-Four
 # License & Usage Notice
------------This repository is provided for viewing purposes only. All rights are reserved by the author. No license is granted to use, copy, modify, merge, publish, distribute, sublicense, or sell any part of this code.You may read the source code, but you are not permitted to use it in any project, commercial or non-commercial, without explicit written permission from the author.Unauthorized use of this code is prohibited.##-----------
-
+-This repository is provided for viewing purposes only. All rights are reserved by the author. No license is granted to use, copy, modify, merge, publish, distribute, sublicense, or sell any part of this code.You may read the source code, but you are not permitted to use it in any project, commercial or non-commercial, without explicit written permission from the author.Unauthorized use of this code is prohibited.
 
 #Here is the code!
+
+
+
+--------------------------------------------------
+---------------------------------------------------
 import tkinter as tk
 from tkinter import messagebox
 def create_matrix(rows,cols):
